@@ -1,11 +1,21 @@
 // https://www.interviewcake.com/question/javascript/reverse-string-in-place?course=fc1&section=array-and-string-manipulation
 
 function reverse(arrayOfChars) {
-  // Reverse the input array of characters in place
+  let start = 0;
+  let end = arrayOfChars.length - 1;
+
+  while (start < end) {
+    const startValue = arrayOfChars[start];
+
+    arrayOfChars[start] = arrayOfChars[end];
+    arrayOfChars[end] = startValue
+
+    start++;
+    end--;
+  }
 }
 
 // Tests
-
 let desc = 'empty string'
 let input = ''.split('')
 reverse(input)
