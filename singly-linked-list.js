@@ -14,7 +14,6 @@ function containsCycle(firstNode) {
 }
 
 // Tests
-
 let desc = 'linked list with no cycle'
 let nodes = valuesToLinkedListNodes([1, 2, 3, 4])
 assertEquals(containsCycle(nodes[0]), false, desc)
